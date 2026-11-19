@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Veee!!!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Happy Birthday,  Veee!!!! 🎂💗</h1>
+
+    <h2>To my favourite person! 🥹</h2>
+
+    <p>
+        You are not just my best friend.
+        You are one of my favourite blessings.
+        I am so lucky to have you! 💕
+    </p>
+
+
+<section class="gallery">
+
+    <h2>Our Beautiful Memories 💗</h2>
+    <p class="gallery-text">A little collection of my favourite moments with you 🥹</p>
+
+    <div class="photo-container">
+
+        <div class="photo-card">
+            <img src="photos/bestie5.jpg" alt="Memory 1">
+            <p>My favourite human 💕</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="photos/bestie1.jpg" alt="Memory 2">
+            <p>Forever my partner in crime 😂</p>
+        </div>
+
+        <div class="photo-card">
+            <img src="photos/bestie2.jpg" alt="Memory 3">
+            <p>Memories to keep forever 🫶</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="birthday-letter">
+
+    <h2>A Little Letter For You 💌</h2>
+
+    <div class="letter-card">
+
+        <h3>Dear Veee, 🥹💗</h3>
+
+        <p>
+            Happy Birthday to my favourite human!
+            You are one of the most beautiful parts
+            of my life.
+        </p>
+
+        <p>
+            Thank you for all the laughs, silly moments,
+            endless memories and unforgettable days.
+            I hope all your dreams come true.
+        </p>
+
+        <p>
+            No matter where life takes us,
+            you'll always have a special place in my heart.
+        </p>
+
+        <h3>Love you forever! 🫂💕</h3>
+
+    </div>
+
+</section>
+<script>
+function showMessage() {
+    document.getElementById("secret-message").style.display = "block";
+}
+</script>
+
+<script>
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML = "💗";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
+
+function startHearts() {
+    setInterval(createHeart, 400);
+}
+</script>
+
+<section class="forever">
+    <h1>Forever Us ♾️</h1>
+
+    <h2>No matter what. 💗</h2>
+
+    <p>
+        Different days, different places, countless memories…
+        but always my favourite person.
+    </p>
+
+    <p>
+        Here's to growing up together, laughing over silly things,
+        making unforgettable memories and staying by each other's side.
+    </p>
+
+    <h2>To us, always. 🫂💕</h2>
+
+    <p class="forever-decor">♾️ 💗 🦋 🌷</p>
+</section>
+
+</body>
+
+<section class="surprise">
+
+    <h2>One Last Surprise For You! 🎀</h2>
+
+    <p>Are you ready, Veee? 🥹</p>
+
+    <button onclick="showMessage(); startHearts()"></button>
+        Open Your Surprise 🎁
+    </button>
+
+    <div id="secret-message">
+        <h2>Surpriseeeee! 💗</h2>
+        <p>
+            You deserve all the happiness in this world!
+            Keep smiling and shining forever! 🌸✨
+        </p>
+        <h2>Happy Birthday Veee! 🎂💕</h2>
+    </div>
+
+</section>
+
+</html>
